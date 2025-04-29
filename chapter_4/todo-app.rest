@@ -1,0 +1,48 @@
+###
+GET http://localhost:5000
+
+###
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+    "username": "gqq@gmail.com",
+    "password": "2e1e"
+}
+
+
+###
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "username": "gqq@gmail.com",
+    "password": "2e1e"
+}
+
+
+###
+GET http://localhost:5000/todos
+Authorization: 
+
+###
+POST http://localhost:5000/todos
+Authorization: 
+Content-Type: application/json
+
+{
+    "task": "Finish"
+}
+
+###
+PUT http://localhost:5003/todos/2?page=4 
+Authorization: 
+Content-Type: application/json
+
+{
+    "completed": 1
+}
+
+### 
+DELETE http://localhost:5003/todos/2 
+Authorization:
